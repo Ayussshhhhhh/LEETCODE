@@ -1,5 +1,2 @@
-SELECT 
-    score,
-    DENSE_RANK() OVER (ORDER BY score DESC) AS 'rank'
+SELECT score, dense_rank() OVER(ORDER BY score DESC) as "rank"
 FROM Scores
-ORDER BY score DESC;
